@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/ml_optiomize"
+
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C1227"
+    tools:context=".ui.FragmentOptimize">
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:id="@+id/cl_optiomize"
+        app:layoutDescription="@xml/fragment_optimize_scene"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="10dp"
+        android:id="@+id/mv_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="#0C1427"
+        app:layout_constraintHeight_percent="0.08"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boost"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_bottom_nav_view_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_start_of_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_end_of_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_top_of_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_cpu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_cpu_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_cpu_used_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_top_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cgl_bottom_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/crpv_progress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/circle_layout_background"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cgl_top"
+app:progress_start_color="#EE4856"
+            app:progress_end_color="#EE4856"
+            app:layout_constraintWidth_percent="0.7"
+            app:progress_style="line"
+           app:line_width="@dimen/_15sdp"
+            app:line_count="100"
+           app:progress_text_color="@android:color/transparent"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_found_used_ram"
+
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/crpv_progress"
+        app:layout_constraintEnd_toEndOf="@+id/crpv_progress"
+        app:layout_constraintTop_toTopOf="@+id/crpv_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/crpv_progress"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ram"
+android:text="@string/ram"
+        android:textAllCaps="false"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/crpv_progress"
+        app:layout_constraintEnd_toEndOf="@+id/crpv_progress"
+        app:layout_constraintTop_toTopOf="@+id/crpv_progress"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_found_used_ram"
+        android:textColor="@color/ram_color"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ram_usage_found"
+        android:text="@string/ram_usage_found"
+        android:textAllCaps="false"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/crpv_progress"
+        app:layout_constraintEnd_toEndOf="@+id/crpv_progress"
+        app:layout_constraintTop_toTopOf="@+id/tv_found_used_ram"
+        app:layout_constraintBottom_toBottomOf="@+id/crpv_progress"
+        android:textColor="#20D78A"
+        />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/materialButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/optimize_button"
+            android:enabled="true"
+            android:src="@drawable/optimize_button"
+            android:textAllCaps="false"
+            app:altSrc="@drawable/optimize_button_optimized"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@+id/cgl_end_of_button"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintStart_toEndOf="@+id/cgl_start_of_button"
+
+            app:layout_constraintTop_toBottomOf="@+id/cgl_cpu_used" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_mb_text"
+    android:text="@string/optimize"
+    android:textColor="@color/white"
+app:layout_constraintStart_toStartOf="@+id/materialButton"
+    app:layout_constraintEnd_toEndOf="@+id/materialButton"
+    app:layout_constraintTop_toTopOf="@+id/materialButton"
+    app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+    />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cgl_top_of_button"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/iv_cpu_icon"
+            android:src="@drawable/ic_cpu_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/tv_ram_used"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        android:text="@string/ram_used"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tv_ram_used_from_to_text"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ram_used_from_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ram_used_from_to_text"
+
+        android:textSize="14sp"
+       android:textColor="#fff"
+        />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Super Cleaner Phone Master</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="optimize">Optimize</string>
+    <string name="optimized">Optimized</string>
+    <string name="ram">Storage</string>
+    <string name="ram_usage_found">Found</string>
+    <string name="ram_used">Ram Usage</string>
+    <string name="normal_mode">Normal\nmode</string>
+    <string name="extreme_mode">Extreme\nPower Saving</string>
+    <string name="ultra_mode">Ultra\nPower Saving</string>
+    <string name="work_left_time">charging time remaning</string>
+    <string name="optimizing">Optimizing...</string>
+    <string name="doit">Apply</string>
+    <string name="ultrapowertext">Extended Battery Up to</string>
+    <string name="add">Add</string>
+    <string name="extremepowermode">Extended Battery Up to</string>
+    <string name="boost">Charge Booster</string>
+    <string name="extreme_power_saving">Extreme Power Saving</string>
+    <string name="ultrapowersaving">Ultra Power Saving</string>
+    <string name="normal_mode_text">Normal mode</string>
+    <string name="energy_saving">Battery Saver</string>
+    <string name="cool_cpu">Cooling CPU</string>
+    <string name="overheat">Overheated</string>
+    <string name="cool">Cool Down</string>
+    <string name="need_cool">Applications Class are causing problem hit cool down</string>
+    <string name="normal">normal</string>
+    <string name="normal_cpu_temperature">CPU Temperature is GOOD</string>
+    <string name="cooled">Cooled</string>
+    <string name="coolled">Cooled CPU to</string>
+    <string name="clean">Clean</string>
+    <string name="clean_hard">Hard</string>
+    <string name="alot">Hard</string>
+    <string name="cookies">Cache\nMemory</string>
+    <string name="time_files">Temporary \nFiles</string>
+    <string name="left_files">Residual \nFiles</string>
+    <string name="system_trash">System\nJunk</string>
+    <string name="cleaned">Cleaned</string>
+    <string name="crystal_clear">Crystal clear</string>
+    <string name="cleaned_button">Cleaned</string>
+    <string name="privacy" translatable="false">Privacy Policy</string>
+    <string name="clean_top">Junk Cleaner</string>
+    <string name="banner_size" translatable="false">SMART_BANNER</string>
+    <string name="banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="inter_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="accept" translatable="false">принять</string>
+    <string name="cancel" translatable="false">отклонить</string>
+    <string name="decrease_cpu">Decreasing Brightness Upto 90%</string>
+    <string name="decrease_cpu_anim">Decreasing Device Performance</string>
+    <string name="closing_apps">Closing All Power Consuming Functions</string>
+    <string name="blocking_apps">Locking Acess To Power Consuming Apps</string>
+    <string name="closing_apps_next">Closing All Power Consuming Functions</string>
+    <string name="reduce_app_light_80">Limit Brightness Up to 80%</string>
+    <string name="close_all">Closes System Services like Bluetooth,Screen Rotation,Sync etc.</string>
+    <string name="title_notefication">Performnace Issue</string>
+    <string name="detail_notification">Phone is Performing Slow due to Large amount of junk files.</string>
+    <string name="my_message">My message</string>
+
+    <string name="is_optimised_by" translatable="false"><![CDATA[Is Optimized by Fast Cleaner & Battery Saver.]]></string>
+    <string name="free" translatable="false">free</string>
+    <string name="used_apps" translatable="false">used_apps</string>
+    <string name="remove" translatable="false">remove</string>
+
+    <string name="cache" translatable="false">cache</string>
+    <string name="ok" translatable="false">ok</string>
+
+    <string name="notif_head" translatable="false">Error</string>
+    <string name="notif_body" translatable="false">Increase device performance</string>
+    <string name="cache_clean" translatable="false">cache</string>
+    <string name="apk_clean" translatable="false">apk</string>
+    <string name="tmp_clean" translatable="false">tmp</string>
+    <string name="log_clean" translatable="false">log</string>
+    <string name="process_clean" translatable="false">process</string>
+    <string name="internal_storage" translatable="false">internal storage</string>
+    <string name="accesibilityService" translatable="false">Magic Cleaner service</string>
+    <string name="serviceDescription" translatable="false">This service clean your app cache. We don`t use your private information.</string>
+
+    <string name="pref_key_language" translatable="false">pref_language</string>
+
+
+    <string name="language" translatable="false"></string>
+
+    <string name="instruments">Tools</string>
+    <string name="app_manager">App Manager</string>
+    <string name="tips">Tips</string>
+    <string name="premium">Activate Smart Cleaner Premiumm</string>
+    <string name="premium_full_text">"No advertising to make your
+ experience at a premium.
+ Enjoy all the services."</string>
+    <string name="delete">Uninstall</string>
+
+    <string name="overtrash">The memory is overflowing.</string>
+    <string name="recommend_to_clean">It is recommended to clean the system</string>
+    <string name="optimize_app">Оптимизируйте устройство</string>
+    <string name="app_installed">Установлено приложение</string>
+    <string name="app_deleted">Deleted application.</string>
+    <string name="tap_to_clean">It is recommended to clean</string>
+    <string name="low_battery">Low charge level. </string>
+    <string name="tap_to_optimize_battery">Press to continue the life of the device</string>
+    <string name="boost_notification">Boost</string>
+    <string name="energy_saving_notify">Battery</string>
+
+    <string name="cpu">CPU</string>
+    <string name="others">More</string>
+</resources>

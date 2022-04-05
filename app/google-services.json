@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1001581234562",
+    "project_id": "newcleanadmob",
+    "storage_bucket": "newcleanadmob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001581234562:android:4210bb6e7826cd8070679b",
+        "android_client_info": {
+          "package_name": "com.phoncleaner.boosterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001581234562-pgmqt6rh5u12dfkrkighame24u3vl4bv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3bYba-w0Z-fq92OSgY9JMgo9xx9tJDik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001581234562-pgmqt6rh5u12dfkrkighame24u3vl4bv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9876408156319734~6694414013"
+    }
+  ],
+  "configuration_version": "1"
+}

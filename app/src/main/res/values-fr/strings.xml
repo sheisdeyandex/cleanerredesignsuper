@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Super Cleaner Phone Master</string>
+    <string name="optimize">Appliquer</string>
+    <string name="optimized">OPTIMISÉ</string>
+    <string name="ram">Stockage</string>
+    <string name="ram_usage_found">Trouvé</string>
+    <string name="ram_used">Utilisation de la RAM</string>
+    <string name="normal_mode">Normal</string>
+    <string name="extreme_mode">Extrême</string>
+    <string name="ultra_mode">Ultra</string>
+    <string name="work_left_time">durée de charge restante</string>
+    <string name="optimizing">Optimisation en cours…</string>
+    <string name="doit">Appliquer</string>
+    <string name="ultrapowertext">Batterie prolongée de</string>
+    <string name="add">Ajouter</string>
+    <string name="extremepowermode">Batterie prolongée jusqu’à</string>
+    <string name="boost">Boosteur de charge</string>
+    <string name="extreme_power_saving">Extrême</string>
+    <string name="ultrapowersaving">Ultra</string>
+    <string name="normal_mode_text">Normal</string>
+    <string name="energy_saving"> Èconomise la batterie</string>
+    <string name="cool_cpu">Refroidissement du processeur en cours</string>
+    <string name="overheat">EN SURCHAUFFE</string>
+    <string name="cool">Refroidir</string>
+    <string name="need_cool">Les applications provoquent des problèmes : appuyez sur « Refroidir »</string>
+    <string name="normal">NORMAL</string>
+    <string name="normal_cpu_temperature">Die CPU-Temperatur ist GUT.</string>
+    <string name="cooled">REFROIDI</string>
+    <string name="coolled">Le processeur est refroidi à</string>
+    <string name="clean">Nettoyer</string>
+    <string name="clean_hard">Hard</string>
+    <string name="alot">Hard</string>
+    <string name="cookies">Mémoire cache</string>
+    <string name="time_files">Fichiers \ntemporaires</string>
+    <string name="left_files">Fichiers \nrésiduels</string>
+    <string name="system_trash">FICHIERS INUTILES\nDU SISTÈME</string>
+    <string name="cleaned">Gelöscht</string>
+    <string name="crystal_clear">KRISTALLKLAR</string>
+    <string name="cleaned_button">Bereinigt</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="clean_top">Nettoie les fichiers inutiles</string>
+    <string name="accept">принять</string>
+    <string name="cancel">отклонить</string>
+    <string name="decrease_cpu">Jusqu\'à 90 % de baisse de la luminosité</string>
+    <string name="decrease_cpu_anim">Baisse des performances de l\'appareil</string>
+    <string name="closing_apps">Fermeture des applis et services en arrière-plan</string>
+    <string name="blocking_apps">Verrouiller l\'accès aux applis gourmandes en énergie</string>
+    <string name="closing_apps_next">Fermeture de toutes les fonctionnalitès gourmandes en ènergie</string>
+    <string name="reduce_app_light_80">Jusqu\'à 80 % de baisse de la luminosité</string>
+    <string name="close_all">Closes System Services like Bluetooth,Screen Rotation,Sync etc.</string>
+    <string name="instruments">Outils</string>
+    <string name="app_manager">Gestionnaire d\'applications</string>
+    <string name="tips">Conseils</string>
+    <string name="premium">Activer Smart Cleaner Premium</string>
+    <string name="premium_full_text">"Pas de publicité pour faire votre
+ l'expérience à un prix élevé.
+ Profitez de tous les services"</string>
+    <string name="delete">Supprimer</string>
+    <string name="overtrash">La mémoire est débordante.</string>
+    <string name="recommend_to_clean">Il est conseillé de nettoyer le système</string>
+    <string name="optimize_app">Оптимизируйте устройство</string>
+    <string name="app_installed">Установлено приложение</string>
+    <string name="app_deleted">L\'application a été supprimée.  </string>
+    <string name="tap_to_clean">Il est conseillé de nettoyer</string>
+
+    <string name="low_battery">Niveau de charge faible. </string>
+    <string name="tap_to_optimize_battery">Appuyez sur pour continuer la vie de l\'appareil</string>
+    <string name="boost_notification">Accélérer</string>
+    <string name="energy_saving_notify">Batterie</string>
+
+    <string name="cpu">CPU</string>
+    <string name="others">De plus</string>
+</resources>
