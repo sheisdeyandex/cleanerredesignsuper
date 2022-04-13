@@ -143,11 +143,8 @@ class MainActivity : AppCompatActivity(), IFragment, AskPermissions{
         when (requestCode) {
             1 -> if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 //permission with request code 1 granted
-                Toast.makeText(this, "Permission Granted", Toast.LENGTH_LONG).show()
             } else {
-                //permission with request code 1 was not granted
-                Toast.makeText(this, "Permission was not Granted", Toast.LENGTH_LONG).show()
-            }
+             }
             else -> super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         }
     }

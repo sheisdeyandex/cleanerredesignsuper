@@ -1,24 +1,24 @@
 package com.phoncleaner.boosterapp.phonemaster.ui
+
+import android.Manifest
+import android.animation.Animator
+import android.animation.ObjectAnimator
 import android.app.ActivityManager
-import android.os.Bundle
-import android.text.format.Formatter
-import android.util.Log
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.content.Context.ACTIVITY_SERVICE
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
-import android.animation.Animator
-
-import android.view.animation.DecelerateInterpolator
-
-import android.animation.ObjectAnimator
 import android.graphics.Color
-import android.os.Handler
-import android.os.Looper
+import android.os.*
+import android.os.Build.VERSION.SDK_INT
+import android.text.format.Formatter
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.animation.DecelerateInterpolator
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
@@ -26,6 +26,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.phoncleaner.boosterapp.phonemaster.MyApplication
 import com.phoncleaner.boosterapp.phonemaster.R
 import com.phoncleaner.boosterapp.phonemaster.databinding.FragmentOptimizeBinding
+
 
 class FragmentOptimize() : Fragment() {
 
@@ -39,29 +40,30 @@ class FragmentOptimize() : Fragment() {
     ): View {
         _binding = FragmentOptimizeBinding.inflate(inflater, container, false)
         val view = binding.root
-     //   binding.handler = this
+        if(SDK_INT>= Build.VERSION_CODES.R){
+            if (!Environment.isExternalStorageManager()){
+                ActivityCompat.requestPermissions(
+                    requireActivity(), arrayOf(
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.MANAGE_EXTERNAL_STORAGE
+                    ), 1
+                )
+            }
+        }
+        else{
+            ActivityCompat.requestPermissions(
+                requireActivity(), arrayOf(
+                    Manifest.permission.READ_EXTERNAL_STORAGE
+                ), 1
+            )
+        }
         getRamUsageInfo()
         var   adRequest = AdRequest.Builder().build()
 if(MyApplication.optimize){
     optimize()
 }
         if(!MyApplication.premiumUser){
-
-       //     (requireActivity()as MainActivity).binding.bnvNav.visibility = View.VISIBLE
-
         }
-
-//        val updateTask: Runnable = object : Runnable {
-//            override fun run() {
-//                if(requireActivity().intent.extras?.get("whattodo") !=null){
-//                    if(requireActivity().intent.extras?.get("whattodo")?.equals("boost")!!){
-//                        binding.materialButton.performClick()
-//                    }
-//                }
-//            }}
-
-//        handler.postDelayed(updateTask, 10)
-
         InterstitialAd.load(requireContext(),getString(R.string.inter_id), adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
 
@@ -113,6 +115,7 @@ if(MyApplication.optimize){
                 binding.crpvProgress.setProgressEndColor(Color.parseColor("#467AFF"))
                 binding.ivCpuIcon.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.ic_cpu_blue_icon))
                 binding.clOptiomize.transitionToEnd()
+
                 if (mInterstitialAd != null) {
                     mInterstitialAd?.show(requireActivity())
                 } else {
