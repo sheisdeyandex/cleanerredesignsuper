@@ -3,8 +3,22 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.gms.google-services'
+    id 'appmetrica-plugin'
 }
 
+appmetrica {
+    postApiKey = { applicationVariant -> "050e8ec2-5e6c-4be9-9029-5a81b54d6342" }
+    // or postApiKey = "Post Api key"
+    enable = { applicationVariant -> true }    // Optional.
+    mappingBuildTypes = ['release']            // Optional.
+    offline = false                            // Optional.
+    enableAnalytics = true                     // Optional.
+    ndk {    // Optional.
+        enable = { applicationVariant -> true }
+        soFiles = { applicationVariant -> listOfSoFiles }             // Optional.
+        additionalSoFiles = { applicationVariant -> listOfSoFiles }   // Optional.
+    }
+}
 android {
     compileSdk 32
 
@@ -14,7 +28,6 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

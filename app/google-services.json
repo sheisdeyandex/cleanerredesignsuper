@@ -1,39 +1,39 @@
 {
   "project_info": {
-    "project_number": "1001581234562",
-    "project_id": "newcleanadmob",
-    "storage_bucket": "newcleanadmob.appspot.com"
+    "project_number": "592267792221",
+    "project_id": "super-cleaner-phone-boos-50140",
+    "storage_bucket": "super-cleaner-phone-boos-50140.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1001581234562:android:4210bb6e7826cd8070679b",
+        "mobilesdk_app_id": "1:592267792221:android:ca051e8bcee9c149f062b4",
         "android_client_info": {
           "package_name": "com.phoncleaner.boosterapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1001581234562-pgmqt6rh5u12dfkrkighame24u3vl4bv.apps.googleusercontent.com",
+          "client_id": "592267792221-bq5r1gco851qnb7ulm6fdn1fj0gv4nl3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD3bYba-w0Z-fq92OSgY9JMgo9xx9tJDik"
+          "current_key": "AIzaSyD0IOW5eFQX1UPyy9vxD-lp3Bx9nx_rV0Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1001581234562-pgmqt6rh5u12dfkrkighame24u3vl4bv.apps.googleusercontent.com",
+              "client_id": "592267792221-bq5r1gco851qnb7ulm6fdn1fj0gv4nl3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
         }
       },
-      "admob_app_id": "ca-app-pub-9876408156319734~6694414013"
+      "admob_app_id": "ca-app-pub-3061982281217393~5884298173"
     }
   ],
   "configuration_version": "1"

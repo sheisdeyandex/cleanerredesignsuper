@@ -74,7 +74,7 @@ android:usesCleartextTraffic="true"
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9876408156319734~6694414013"/>
+            android:value="ca-app-pub-3061982281217393~5884298173"/>
         <activity
             android:name="com.phoncleaner.boosterapp.phonemaster.ui.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
