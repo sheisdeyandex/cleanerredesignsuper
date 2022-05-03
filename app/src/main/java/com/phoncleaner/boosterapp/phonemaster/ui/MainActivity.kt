@@ -368,7 +368,7 @@ manager.cancel(1)
             binding.clOptimize.visibility = View.VISIBLE
 
             if(intent.extras?.get("whattodo").toString() == "optimize"){
-                selectTab("optimize")
+                selectTab("energysaving")
                 MyApplication.optimize = true
             }
             if(intent.extras?.get("whattodo").toString() == "energysaving"){
@@ -403,10 +403,6 @@ binding.clOptimize.visibility = View.GONE
         initEnergySavingAnims()
         binding.bnvNav.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.nav_graph_home -> {
-                    selectTab("optimize")
-                    true
-                }
                 R.id.nav_energy_saving -> {
                     selectTab("energysaving")
                     true
@@ -454,7 +450,7 @@ fun initInter() {
                     mInterstitialAd = null
                     if(!MyApplication.notificationClicked){
 
-                        selectTab("optimize")
+                        selectTab("energysaving")
                         binding.clSplash.visibility= View.GONE
                         binding.clOptimize.visibility = View.VISIBLE
                     }
@@ -509,7 +505,7 @@ fun initInter() {
                 else{
                     if(!MyApplication.showuserpolicy) {
                         if(!MyApplication.notificationClicked){
-                            selectTab("optimize")
+                            selectTab("energysaving")
                             interstitialAd.show(this@MainActivity)
 
                             object :CountDownTimer(1000,1000){
